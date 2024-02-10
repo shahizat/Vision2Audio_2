@@ -1,0 +1,30 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vision2Audio: Giving the Blind an Understanding Through AI</title>
+  <script src="https://cdn.WebRTC-Experiment.com/MediaStreamRecorder.js"></script>
+  <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+  <link href="{{ url_for('static', path='style.css') }}" rel="stylesheet" />
+</head>
+
+<body>
+  <video id="videoElement" autoplay playsinline muted loop ></video>
+  <div id="overlay">
+    <div id="description"></div>
+    <div id="controls">
+      <button id="start-recording"><img class="icon" src="{{ url_for('static', path='microphone-solid.svg') }}"></button>
+    </div>
+  </div>
+  <section>
+    
+  <div id="audios-container" style="visibility: hidden"></div>
+</section>
+  <script src="{{ url_for('static', path='howler.min.js') }}"></script>
+  <script src="{{ url_for('static', path='script.js') }}"></script>
+ 
+</body>
+
+</html>
+
