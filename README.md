@@ -26,7 +26,6 @@ python3 -m uvicorn app:app --port 5000 --host 0.0.0.0 --ssl-keyfile ./key.pem --
 Open another terminal and run cloudflared tunnel using the following command:
 ```
 cloudflared tunnel --url http://127.0.0.1:5000
-
 ```
 
 ### Acknowledgements
